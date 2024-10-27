@@ -36,6 +36,22 @@
 [class*="icon-button"]:hover {
     color: var(--color-primary);
 }
+.logo-box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.menu-icon-button {
+    color: var(--color-darker-black);
+    background-color: var(--color-lightest-gray);
+    border-radius: 0.7rem;
+    border: 0.1rem solid var(--color-darker-black);
+    text-align: center;
+    display: none;
+}
+.menu-icon-button:hover {
+    color:var(--color-primary);
+}
 
 /*Navigation*/
 .navigation-header {
@@ -45,15 +61,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: clamp(0.1rem, 4.2vw, 12rem);
-    border-top: solid 1px var(--color-darkest-gray);
-    border-bottom: solid 1px var(--color-darkest-gray);
+    gap: clamp(0.1rem, 5.5vw, 10rem);
+    border-top: solid 1px var(--color-lighter-gray);
+    border-bottom: solid 1px var(--color-lighter-gray);
 }
 [class*="nav-button"] {
     text-transform: uppercase;
     text-decoration: none;
     font-family: Roboto;
-    font-size: clamp(0.1rem, 2.6vw, 2rem); /*max 16px = 2rem*/
+    font-size: clamp(0.1rem, 5.5vw, 2rem); /*max 16px = 2rem*/
     font-weight: 700;
     line-height: 2.35rem;
     text-align: left;
@@ -62,4 +78,16 @@
 }
 .navigation-header>[class*="nav-button"]:hover {
     color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+    .navigation-header {
+        display: none;
+    }
+    .icons-header {
+        border-bottom: solid 1px var(--color-lighter-gray);
+    }
+    .menu-icon-button {
+        display: block;
+    }
 }
