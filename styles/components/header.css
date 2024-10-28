@@ -51,6 +51,7 @@
 }
 .menu-icon-button:hover {
     color:var(--color-primary);
+    cursor: pointer;
 }
 
 /*Navigation*/
