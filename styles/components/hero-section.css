@@ -20,14 +20,14 @@
     margin-top: auto;
     margin-bottom: auto;
 }
-.hero-section > .description-hero-section > h1 {
+.hero-section > .description-hero-section > h2 {
     font-family: Roboto;
     font-size: clamp(1.5rem,1.1vw,2.75rem);
     font-weight: 400;
     text-align: left;
     color: var(--color-darkest-black-blue);
 }
-.hero-section > .description-hero-section > h2 {
+.hero-section > .description-hero-section > h3 {
     display: block;
     margin-top: 2.5rem;
 

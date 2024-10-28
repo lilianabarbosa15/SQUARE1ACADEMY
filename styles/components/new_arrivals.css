@@ -1,0 +1,10 @@
+.new_arrivals-section {
+    --primary-width-cart: 36.25rem;     /*290px*/
+    --primary-height-cart: 57.25rem;    /*458px*/
+}
+.new_arrivals-section {
+    background-color: aqua;         /*******************/
+    width: 100%;
+    height: 800px;                    /*******************/
+}
+/*pruebas nada más*/
