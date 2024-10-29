@@ -1,5 +1,5 @@
 /*
-This stylesheet is the primary archive that provides the necessary styling.
+This stylesheet is the primary archive that provides the necessary styling for the home page
 */
 @import "./reset.css";
 @import "./fonts/fonts.css";
@@ -23,47 +23,4 @@ This stylesheet is the primary archive that provides the necessary styling.
     --color-darkest-gray: #8A8A8A; /*ghost button text*/
     --color-darker-orange: #A86A3D;
     --color-lighter-violet: #DBD0CCCC;
-}
-
-a, button {
-    text-decoration: none;
-    text-align: left;
-    font-size: clamp(0.1rem, 5.5vw, 2rem); /*max 16px = 2rem*/
-    font-family: Poppins;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: var(--color-darker-black);
-    transition: all 150ms;
-}
-a:hover {
-    color: var(--color-primary);
-}
-
-img {
-    display: block; /*img is type inline*/
-}
-
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
-    text-align: center;
-    box-sizing: border-box;
-    border-radius: 1.25rem;
-}
-button:hover {
-    cursor:pointer;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    font-family: Poppins;
-    text-align: center;
-    font-weight: 400;
 }

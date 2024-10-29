@@ -23,18 +23,54 @@ button,
 textarea,
 select {
     font-family: Poppins;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
+    transition: all 150ms;
+}
+button:hover {
+    transform: scale(1.1);
+}
+a, button {
+    text-decoration: none;
+    text-align: left;
+    font-size: clamp(0.1rem, 5.5vw, 2rem); /*max 16px = 2rem*/
+    font-family: Poppins;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--color-darker-black);
+    transition: all 150ms;
+}
+a:hover {
+    color: var(--color-primary);
 }
 
-p {
-    text-wrap: pretty; /*This may not be supported by all browsers.*/
+img {
+    display: block; /*img is type inline*/
 }
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 1.25rem;
+}
+button:hover {
+    cursor:pointer;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    text-wrap: balance; /*This may not be supported by all browsers.*/
+h6,
+p {
+    font-family: Poppins;
+    text-align: center;
+    font-weight: 400;
 }
 
 img,
