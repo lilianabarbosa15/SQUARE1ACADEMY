@@ -1,0 +1,12 @@
+@import "./products_shop.css";
+@import "./footer-2.css";
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0;
+}
+nav {
+    background-color: aqua;
+    grid-column: 1/2;
+}

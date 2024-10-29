@@ -1,0 +1,10 @@
+@import "./product_card.css"; /**/
+
+.products_shop-section {
+    background-color: sienna;
+    grid-column: 2/5;
+}
+.products_shop-section > .products_shop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
