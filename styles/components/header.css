@@ -5,9 +5,6 @@
 }
 
 /*Icons and logo*/
-.img-logo { 
-    display: block;     /*img is type inline*/
-}
 .icons-header {
     width: 100%;
     padding: 2rem;
@@ -27,9 +24,6 @@
 [class*="icon-button"] {
     width: 4.25rem;
     height: 4.25rem;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
     color: var(--color-darker-black);
     transition: all 150ms;
 }
@@ -46,7 +40,6 @@
     background-color: var(--color-lightest-gray);
     border-radius: 0.7rem;
     border: 0.1rem solid var(--color-darker-black);
-    text-align: center;
     display: none;
 }
 .menu-icon-button:hover {
@@ -68,17 +61,9 @@
 }
 [class*="nav-button"] {
     text-transform: uppercase;
-    text-decoration: none;
     font-family: Roboto;
-    font-size: clamp(0.1rem, 5.5vw, 2rem); /*max 16px = 2rem*/
     font-weight: 700;
     line-height: 2.35rem;
-    text-align: left;
-    color: var(--color-darker-black);
-    transition: all 150ms;
-}
-.navigation-header>[class*="nav-button"]:hover {
-    color: var(--color-primary);
 }
 
 @media screen and (max-width: 768px) {

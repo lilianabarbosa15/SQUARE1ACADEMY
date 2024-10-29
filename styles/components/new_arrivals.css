@@ -2,15 +2,13 @@
 
 /**/
 .new_arrivals-section {
-    --width-card: 36.25rem;     /*290px*/
+    --width-card: clamp(20rem,16vw,36.25rem);   /*290px max*/
     --height-card: 57.25rem;    /*458px*/
-    --height-button: 7rem;      /*56px;*/
-    --width-button: 25.875rem; /*207px;*/
-    --primary-height-section: 180rem;/*206.5rem; /***************************delete***/
+    --height-button: clamp(6rem,3vw,7rem);          /*56px max*/
+    --width-button: clamp(17rem,11vw,25.875rem);    /*207px max*/
 }
 .new_arrivals-section {
     width: 100%;
-    height: var(--primary-height-section);                    /*******************/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -20,10 +18,12 @@
     color: var(--color-darker-black);
     gap: 5rem; /**************/
 
-    border-top: 10rem solid; /**************/
+    border-top: clamp(5rem,4.5vw,10rem) solid;
     border-image: linear-gradient(180deg, var(--color-lightest-gray),var(--color-white),var(--color-white));
-    border-image-slice: 600; /**************/
+    border-image-slice: 380;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-bottom: clamp(3rem,5vw,10.5rem);
 }
 
 /*header*/
@@ -35,18 +35,16 @@
     gap: 4rem;     /****************/
 }
 .new_arrivals-section .new_arrivals-title {
-    width: 76.75rem;           /****************/
-    height: 15.375rem;          /****************/
+    width: clamp(40rem,38vw,76.75rem);
     word-wrap: wrap;
     text-align: center;
 }
 .new_arrivals-title > h2 {
-    display: block;
-    font-size: 5.75rem;        /****************/
+    font-size: clamp(4.5rem,2.5vw,5.75rem);
     font-weight: 700;
 }
 .new_arrivals-title > p {
-    font-size: 2rem;            /****************/
+    font-size: clamp(1.5rem,1.1vw,2rem);
     font-weight: 400;
     color: var(--color-darkest-gray-red);
 }
@@ -54,19 +52,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;     /****************/
+    gap: clamp(2rem,1.3vw,3rem);
 }
 
 /*products*/
 .new_arrivals-section > .products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5rem; /*************/
+    grid-template-columns: repeat(4,1fr);
+    gap: clamp(2rem,2.5vw,5rem);
 }
 
 /*buttons*/
 [class*="new_arrivals-button"] {
-    font-size: 2rem;                /****************/
+    font-size: clamp(1.6rem, 0.9vw, 2rem);
     font-weight: 400;
     text-align: center;
     width: var(--width-button);
@@ -91,4 +89,36 @@
 }
 .new_arrivals-section .more-new_arrivals-button:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .new_arrivals-section {
+        --width-card: (20rem,40vw,36.25rem);
+        border-top: 0.3rem solid var(--color-lighter-gray);
+        border-image: var(--color-lighter-gray);
+        border-image-slice: 0;
+        padding-top: 2rem;
+    }
+    .new_arrivals-section > .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: clamp(2rem,5vw,4rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .new_arrivals-section > header {
+        display: grid;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .new_arrivals-title {
+        justify-self: center;
+    }
+    .new_arrivals-section > header > nav {
+        display: flex;
+        overflow-x: auto; /* Keep this on the container */
+        flex-wrap: nowrap; /* Allow buttons to wrap onto multiple lines */
+        justify-content: space-between; /* Distribute space between buttons */
+        width: 100%; /* Ensure container takes up full width */
+    }
 }

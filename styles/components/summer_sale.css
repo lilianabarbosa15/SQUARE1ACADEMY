@@ -24,20 +24,19 @@
 .summer_sale-section > .summer_sale-info {
     position: relative;
     z-index: 1;
-    width: clamp(40rem,32vw,75.25rem); /*602px*/
-    margin-top: clamp(3rem,6.5vw,12.5rem);
-    margin-bottom: clamp(3rem,6.5vw,12.5rem);
-    text-wrap: wrap;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    font-family: Poppins;
+
     color: var(--color-white);
-    text-shadow: 0px 5px 3px #00000033;
-    text-align: center;
+    text-shadow: 0px 5px 5px #00000033;
+
+    width: clamp(40rem,32vw,75.25rem); /*602px*/
+    margin-top: clamp(3rem,6.5vw,12.5rem);
+    margin-bottom: clamp(3rem,6.5vw,12.5rem);
+    text-wrap: wrap;
 }
 .summer_sale-info > h3 {
     font-size: clamp(1.7rem,1.3vw,3rem);
@@ -49,26 +48,22 @@
 }
 .summer_sale-info > p {
     font-size: clamp(1.2rem,1vw,2rem);
-    font-weight: 400;
 }
 
 .summer_sale-info > [class*="section-button"] {
     width: 16.875rem;
     height: 6.25rem;
     padding: 13px 28px 13px 28px;
+    margin-top: clamp(3rem,1.5vw,5rem);
     
-    border-radius: 6px;
+    border-radius: 0.75rem;
     border: 2px solid var(--color-primary);
     background-color: var(--color-primary);
-    transition: all 150ms;
-
     color: var(--color-white);
     font-size: 1.75rem;
     font-weight: 500;
-
-    margin-top: clamp(3rem,1.5vw,5rem);
+    transition: all 150ms;
 }
 .summer_sale-info > [class*="section-button"]:hover {
-    cursor: pointer;
     transform: scale(1.1);
 }

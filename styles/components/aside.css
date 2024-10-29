@@ -31,8 +31,11 @@
     flex-direction: column;
     justify-content: center;
 }
+.aside > [class*="aside-feature"] > div > p {
+    text-align: left;
+}
 .aside > [class*="aside-feature"] > div > p:not(.aside > [class*="aside-feature"] > div >p:first-child) {
-    font-size: clamp(1rem,0.5vw,2rem);
+    font-size: clamp(1rem,0.85vw,2rem);
     font-weight: 400;
 }
 
