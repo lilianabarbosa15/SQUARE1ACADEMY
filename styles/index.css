@@ -1,26 +1,8 @@
 /*
-This stylesheet is the primary archive that provides the necessary styling for the home page
+This stylesheet is the primary archive that provides the necessary styling for the homepage
 */
 @import "./reset.css";
 @import "./fonts/fonts.css";
 @import "./components/index.css";
 
-:root { /*Variables*/
-    /*Font*/
-    font-size: 8px;
-    /*Colors*/
-    --color-primary: #ED1C24; /*red*/
-    --color-lightest-gray-red:#E5E5E5;
-    --color-darkest-gray-red: #525252;
-    --color-lighter-gray: #484848; /*a few letters*/
-    --color-darker-black: #191919;
-    --color-darkest-black-blue: #323334;
-    --color-white: #FFFFFF;
-    --color-lightest-blue: #DEDFE1;
-    --color-lightest-gray: #FAFAFA;
-    --color-lighter-gray: #CCCCCC;
-    --color-darker-gray: #A3A3A3;
-    --color-darkest-gray: #8A8A8A; /*ghost button text*/
-    --color-darker-orange: #A86A3D;
-    --color-lighter-violet: #DBD0CCCC;
-}
+
