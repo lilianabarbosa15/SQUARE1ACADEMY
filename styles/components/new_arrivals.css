@@ -1,0 +1,124 @@
+@import "./product_card.css"; /**/
+
+/**/
+.new_arrivals-section {
+    --width-card: clamp(20rem,16vw,36.25rem);   /*290px max*/
+    --height-card: 57.25rem;    /*458px*/
+    --height-button: clamp(6rem,3vw,7rem);          /*56px max*/
+    --width-button: clamp(17rem,11vw,25.875rem);    /*207px max*/
+}
+.new_arrivals-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    font-family: Poppins;
+    color: var(--color-darker-black);
+    gap: 5rem; /**************/
+
+    border-top: clamp(5rem,4.5vw,10rem) solid;
+    border-image: linear-gradient(180deg, var(--color-lightest-gray),var(--color-white),var(--color-white));
+    border-image-slice: 380;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-bottom: clamp(3rem,5vw,10.5rem);
+}
+
+/*header*/
+.new_arrivals-section > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;     /****************/
+}
+.new_arrivals-section .new_arrivals-title {
+    width: clamp(40rem,38vw,76.75rem);
+    word-wrap: wrap;
+    text-align: center;
+}
+.new_arrivals-title > h2 {
+    font-size: clamp(4.5rem,2.5vw,5.75rem);
+    font-weight: 700;
+}
+.new_arrivals-title > p {
+    font-size: clamp(1.5rem,1.1vw,2rem);
+    font-weight: 400;
+    color: var(--color-darkest-gray-red);
+}
+.new_arrivals-section > header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(2rem,1.3vw,3rem);
+}
+
+/*products*/
+.new_arrivals-section > .products {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: clamp(2rem,2.5vw,5rem);
+}
+
+/*buttons*/
+[class*="new_arrivals-button"] {
+    font-size: clamp(1.6rem, 0.9vw, 2rem);
+    font-weight: 400;
+    text-align: center;
+    width: var(--width-button);
+    height: var(--height-button);
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
+[class*="new_arrivals-button"]:not(.more-new_arrivals-button) {
+    color: var(--color-darkest-gray);
+    border: 2px solid var(--color-lightest-gray);
+    background-color: var(--color-lightest-gray);
+    transition: all 150ms;
+}
+[class*="new_arrivals-button"]:hover:not(.more-new_arrivals-button),
+[class*="new_arrivals-button"]:active:not(.more-new_arrivals-button), 
+.more-new_arrivals-button {
+    color: var(--color-white);
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
+    box-shadow: 0px 18px 22px #00000033;
+    transition: all 150ms;
+}
+.new_arrivals-section .more-new_arrivals-button:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .new_arrivals-section {
+        --width-card: (20rem,40vw,36.25rem);
+        border-top: 0.3rem solid var(--color-lighter-gray);
+        border-image: var(--color-lighter-gray);
+        border-image-slice: 0;
+        padding-top: 2rem;
+    }
+    .new_arrivals-section > .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: clamp(2rem,5vw,4rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .new_arrivals-section > header {
+        display: grid;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .new_arrivals-title {
+        justify-self: center;
+    }
+    .new_arrivals-section > header > nav {
+        display: flex;
+        overflow-x: auto; /* Keep this on the container */
+        flex-wrap: nowrap; /* Allow buttons to wrap onto multiple lines */
+        justify-content: space-between; /* Distribute space between buttons */
+        width: 100%; /* Ensure container takes up full width */
+    }
+}

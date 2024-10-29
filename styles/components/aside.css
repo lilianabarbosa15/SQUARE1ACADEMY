@@ -1,0 +1,72 @@
+.aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    padding-top: clamp(4rem,3.8vw,9rem);
+    padding-bottom: clamp(4rem,3.8vw,9rem);
+    margin-top: clamp(4rem,3.8vw,9rem);
+    margin-bottom: clamp(4rem,3.8vw,9rem);
+    gap: clamp(2rem,10vw,12rem);
+    font-family: Poppins;
+    color: var(--color-darker-black);
+    font-size: clamp(1.5rem,1.2vw,2.5rem);
+    font-weight: 500;
+    text-align: left;
+}
+.aside > [class*="aside-feature"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.aside > [class*="aside-feature"] > svg {
+    width: clamp(2rem,2.7vw,6.25rem);
+    height: clamp(2rem,2.7vw,6.25rem);
+}
+.aside > [class*="aside-feature"] > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aside > [class*="aside-feature"] > div > p {
+    text-align: left;
+}
+.aside > [class*="aside-feature"] > div > p:not(.aside > [class*="aside-feature"] > div >p:first-child) {
+    font-size: clamp(1rem,0.85vw,2rem);
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .aside {
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        gap: 2.5px;
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .aside > [class*="aside-feature"] {
+        justify-self: center;
+        align-self: center;
+    }
+    .high_quality-aside-feature {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    .warranty_protection-aside-feature {
+        grid-column: 2 / 4;
+        grid-row: 1;
+    }
+    .free_shipping-aside-feature {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+    .support-aside-feature {
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+}

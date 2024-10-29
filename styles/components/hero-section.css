@@ -1,0 +1,72 @@
+.hero-section {
+    width: 100%;
+    background-color: var(--color-lighter-violet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(5rem,5.5vw,13rem);
+}
+.hero-section > .img-hero-section {
+    width: clamp(20rem, 17vw, 38.5rem);         /*308px max.*/
+    height: clamp(40rem, 34vw, 80.875rem);      /*80.875rem = 647px max. */
+    margin-top: clamp(2rem,5vw,11.1875rem);
+    margin-bottom: clamp(2rem,5vw,11.1875rem);
+}
+.hero-section > .description-hero-section {
+    max-width: 58.25rem;
+    max-height: 32.125rem;
+    text-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.hero-section > .description-hero-section > h2 {
+    font-size: clamp(1.5rem,1.3vw,2.75rem);
+    font-family: Roboto;
+    text-align: left;
+    color: var(--color-darkest-black-blue);
+}
+.hero-section > .description-hero-section > h3 {
+    margin-top: 2.5rem;
+    font-family: Roboto;
+    text-align: left;
+    font-size: clamp(3rem,3vw,6rem);
+    font-weight: 700;
+    color: var(--color-darker-orange);
+}
+.hero-section > .description-hero-section > .hero-section-button {
+    width: clamp(10rem,6.5vw,15.5rem);
+    height: clamp(5rem,2.5vw,6rem);
+
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-darkest-black-blue);
+    background-color: var(--color-lighter-violet);
+    font-family: Roboto;
+    font-size: 1.75rem;
+    font-weight: 700;
+
+    margin-left: 2rem;
+    margin-top: 4rem;
+    color: var(--color-darkest-black-blue);
+    transition: all 150ms;
+}
+.description-hero-section>[class*="section-button"]:hover {
+    color: var(--color-darker-orange);
+    border: 1px solid var(--color-darker-orange);
+}
+
+@media screen and (max-width: 640px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+    }
+    .hero-section > .description-hero-section {
+        margin-left: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .hero-section > .description-hero-section > .hero-section-button {
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+}

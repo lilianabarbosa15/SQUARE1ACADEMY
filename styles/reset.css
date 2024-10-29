@@ -1,0 +1,63 @@
+/*
+This stylesheet normalizes all elements by removing default browser styling, 
+providing a consistent starting point for custom styles.
+*/
+
+* {
+    /*This helps to ensure consistent styling across different browsers.*/
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    /*The width and height properties will include the padding and border widths,
+    making it easier to create consistent layouts.*/
+    box-sizing: border-box;
+}
+body {
+    min-height: 100dvh;
+}
+input,
+button,
+textarea,
+select {
+    font-family: Poppins;
+}
+
+p {
+    text-wrap: pretty; /*This may not be supported by all browsers.*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance; /*This may not be supported by all browsers.*/
+}
+
+img,
+video,
+svg {
+    /*They will scale to fit within their parent container while maintaining
+    their aspect ratio.*/
+    height: auto;
+    max-width: 100%;
+}
+
+@media (prefers-reduce-motion: reduce) {
+    /*This media query applies styles when the user has requested reduced motion.*/
+    *,
+    *::before,
+    *::after {
+        /*Sets the duration of all animations to an extremely short time (effectively disabling them).*/
+        animation-duration: 0.01ms !important;
+        /*Ensures that any animations will only play once, preventing looping animations.*/
+        animation-iteration-count: 1 !important;
+        /*Sets the duration of all transitions to an extremely short time (effectively disabling them).*/
+        transition-duration: 0.01ms !important;
+        /*Disables smooth scrolling, reverting to the default instant scrolling behavior.*/
+        scroll-behavior: auto !important;
+    }
+}
