@@ -55,6 +55,7 @@
     height: 6.25rem;
     padding: 13px 28px 13px 28px;
     margin-top: clamp(3rem,1.5vw,5rem);
+    box-shadow: 2px 7px 5px #00000033;
     
     border-radius: 0.75rem;
     border: 2px solid var(--color-primary);
