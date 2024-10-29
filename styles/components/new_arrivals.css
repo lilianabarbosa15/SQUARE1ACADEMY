@@ -113,6 +113,10 @@
     }
     .new_arrivals-title {
         justify-self: center;
+        flex-wrap: wrap;
+        white-space: wrap;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .new_arrivals-section > header > nav {
         display: flex;
