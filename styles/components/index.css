@@ -1,4 +1,4 @@
 @import "./header.css";
-@import "./main.css";
-@import "./aside.css";
-@import "./footer.css";
+@import "./index/main.css";
+@import "./index/aside.css";
+@import "./index/footer.css";

@@ -1,4 +1,4 @@
-@import "./product_card.css"; /**/
+@import "./../product_card.css"; /**/
 
 .products_shop-section {
     grid-column: 2/5;
