@@ -4,7 +4,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 0.375rem;
-    padding: 2.813rem;   /*********************/
+    padding: 2.813rem;   /**/
 }
 footer > .new_page-button {
     width: clamp(4rem,2.4vw,5.5rem);

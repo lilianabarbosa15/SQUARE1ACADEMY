@@ -10,6 +10,17 @@ main {
 
     font-family: Volkhov;
     color: var(--color-black);
-    font-size: 16px;        /*********************/
-    margin: 10px;
+    font-size: 16px;        /**/
+    margin: 10px;           /**/
+}
+@media screen and (max-width: 740px) {
+    .nav-shop {
+        display: none;
+    }
+    main {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .products_shop-section {
+        grid-column: 1/4;
+    }
 }
