@@ -1,0 +1,26 @@
+@import "./nav-shop.css";
+@import "./products_shop.css";
+@import "./footer-shop.css";
+
+/*general features of the main information*/
+main {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0;
+
+    font-family: Volkhov;
+    color: var(--color-black);
+    font-size: 16px;        /**/
+    margin: 10px;           /**/
+}
+@media screen and (max-width: 740px) {
+    .nav-shop {
+        display: none;
+    }
+    main {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .products_shop-section {
+        grid-column: 1/4;
+    }
+}
