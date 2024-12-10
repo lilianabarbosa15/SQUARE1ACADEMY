@@ -1,0 +1,9 @@
+/*
+This stylesheet is the primary archive that provides the necessary styling for the product page,
+where the client can find every detail of the item.
+*/
+@import "./reset.css";
+@import "./fonts/fonts.css";
+@import "./components/product.css";
+
+

@@ -1,0 +1,5 @@
+@import "./header.css";
+
+.navigation-header {
+    background: var(--color-white);
+}
