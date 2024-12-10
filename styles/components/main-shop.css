@@ -1,12 +1,15 @@
+@import "./nav-shop.css";
 @import "./products_shop.css";
-@import "./footer-2.css";
+@import "./footer-shop.css";
 
+/*general features of the main information*/
 main {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 0;
-}
-nav {
-    background-color: aqua;
-    grid-column: 1/2;
+
+    font-family: Volkhov;
+    color: var(--color-black);
+    font-size: 16px;        /*********************/
+    margin: 10px;
 }

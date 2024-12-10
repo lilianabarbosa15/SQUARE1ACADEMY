@@ -1,0 +1,118 @@
+nav {
+    grid-column: 1/2;
+}
+
+/*filters of the products*/
+.nav-shop {
+    padding: 10px; /*********************/
+    display: grid;
+    height: 1112px; /*********************/
+    flex-direction: column;
+    row-gap: 30px;  /*********************/
+}
+.nav-shop > .nav-shop-title { /*Filter*/
+    font-family: Volkhov;
+    text-align: left;
+    font-size: 30px; /*********************/
+}
+.filter-tittle > h2 { /*Subtittles (Size, Colors, Prices,Brands, Collections, Tags)*/
+    font-family: Volkhov;
+    text-align: left;
+    font-size: 16px; /*********************/
+}
+[class^='product-filter'] > .filter-tittle {
+    display: flex;
+    justify-content: space-between;
+}
+[class^='product-filter'] > div:not([class*='tittle']){
+    font-family: Poppins;
+    font-size: 16px;
+    color: var(--color-darkest-gray);
+}
+
+/*buttons sizes*/
+.product-filter-sizes{
+    width: 150px; /*ancho botones*3 = 126px + 30px (espacios)*/ /***********/
+    height: 133px;  /***********/
+    display: grid;
+    row-gap: 15px; /**********/
+}
+.product-filter-sizes > div:not([class*='tittle']){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 5px; /***********/
+    column-gap: 10px;   /*********************/
+    box-sizing: border-box;
+}
+.product-filter-sizes > div > .product-size {
+    color: var(--color-darkest-gray);
+    border: 1px solid var(--color-darkest-gray);
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    width: 100%;
+
+    height: 45px;   /********????????????***/
+}
+
+/*colors*/
+.product-filter-colors{
+    display: grid;
+    row-gap: 10px; /*****************/
+}
+.product-filter-colors > div:not([class*='tittle']){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.product-filter-colors > div:not([class*='tittle']) > .product-color{
+    width: 30px;        /*************min 24****/
+    height: 30px;       /*************min 24****/
+    margin: 5px;        /*****************/
+}
+
+/*prices*/
+.product-filter-price{
+    display: grid;
+    text-align: left;
+    row-gap: 10px;
+}
+.product-filter-price > div:not([class*='tittle']) > p {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*brands*/
+.product-filter-brands {
+    display: grid;
+    row-gap: 10px;
+    width: 272px;
+}
+.product-filter-brands > div:not([class*='tittle']) > p {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*collections*/
+.product-filter-collections {
+    display: grid;
+    row-gap: 10px;
+    width: 272px;
+}
+.product-filter-collections > div:not([class*='tittle']) > p {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*tags*/
+.product-filter-tags {
+    display: grid;
+    row-gap: 10px;
+    width: 272px;
+}
+.product-filter-tags > div:not([class*='tittle']) > p {
+    display: inline-block;
+    font-family: Jost;
+    margin-right: 10px;
+}
