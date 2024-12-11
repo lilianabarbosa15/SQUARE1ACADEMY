@@ -1,17 +1,14 @@
 .footer-sale-information {
-    background-color: blueviolet;
-    margin-left: var(--margin-left);
-    margin-right: var(--margin-right);
-    margin-top: 40px;   /*******/
+    margin: var(--margin-second_column);
 }
 /*ways of interactions*/
 .item-interaction {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
-    padding-top: 10px; /*********/
-    padding-bottom: 10px; /*********/
+    gap: clamp(15px, calc(var(--max-width)*0.052), 30px);
+    padding-top: 10px;      /**/
+    padding-bottom: 10px;   /**/
     margin-right: var(--inter-margin-right);
     border-bottom: 1px solid var(--color-darkest-gray-red);
 }
@@ -19,11 +16,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(1px, calc(var(--max-width)*0.005), 10px);
     
     font-family: Jost;
     font-weight: 400;
-    font-size: 12px;    /*************/
+    font-size: clamp(10px, calc(var(--max-width)*0.022), 12px);
 }
 /*shipping information*/
 .shipping-info {
@@ -31,8 +28,8 @@
     flex-direction: column;
     gap: 7px;
 
-    padding-top: 30px;      /***********/
-    padding-bottom: 30px;   /***********/
+    padding-top: clamp(15px, calc(var(--max-width)*0.052), 30px);
+    padding-bottom: clamp(15px, calc(var(--max-width)*0.052), 30px);
 }
 [class$='shipping'] {
     display: flex;
@@ -43,18 +40,18 @@
 [class$='shipping'] > h4 {
     font-family: Volkhov;
     font-weight: 700;
-    font-size: 16px;    /*************/
+    font-size: clamp(10px, calc(var(--max-width)*0.035), 16px);
 }
 [class$='shipping'] > p {
     font-family: Poppins;
     font-weight: 400;
-    font-size: 16px;    /*************/
+    font-size: clamp(10px, calc(var(--max-width)*0.035), 16px);
 }
 /*payment*/
 .payment-methods {
     font-family: Volkhov;
     font-weight: 400;
-    font-size: 16px;    /*************/
+    font-size: clamp(12px, calc(var(--max-width)*0.035), 16px);
     margin-right: var(--inter-margin-right);
 
     display: flex;
@@ -64,7 +61,11 @@
     background-color: var(--color-lighter-gray);
     border-radius: 5px;
 
-    padding-top: 30px;      /************/
-    padding-bottom: 20px;   /**********/
+    padding-top: clamp(20px, calc(var(--max-width)*0.052), 30px);
+    padding-bottom: clamp(10px, calc(var(--max-width)*0.035), 20px);
     gap: 10px;
+}
+.payment-methods > img {
+    width: clamp(100px,calc((var(--max-width) - var(--inter-margin-right))*0.57), 320px);
+    aspect-ratio: 5/0.4;
 }

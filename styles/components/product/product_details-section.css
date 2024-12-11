@@ -1,20 +1,19 @@
 @import "./../shop/products_shop.css";
 
 .product-details {
-    background-color: green;
     display: flex;
     flex-direction: column;
     color: var(--color-black);
-    gap: 30px;  /***********/
-    padding-left: var(--padding-left);
-    padding-right: var(--padding-right);
+    gap: clamp(15px, calc(var(--max-width)*0.045), 30px);
+    margin-left: var(--margin-second_column);
+    margin-right: var(--margin-second_column);
     box-sizing: border-box;
 }
 .product-details > [class$='all_rating'] > h1 {
     font-family: Volkhov;
     font-weight: 400;
-    font-size: 14px;    /************/
-    color: var(--color-lightest-gray);
+    font-size: clamp(12px, calc(var(--max-width)*0.03), 14px);
+    color: var(--color-lighter-gray);
     text-transform: uppercase;
     display: inline-block;
 }
@@ -27,22 +26,23 @@
 [class$='all_rating'] > [class$='favorite'] > h2 {
     font-family: Volkhov;
     font-weight: 400;
-    font-size: 30px;        /*************/
+    font-size: clamp(25px, calc(var(--max-width)*0.075), 30px);
 }
 [class$='all_rating'] > [class$='favorite'] > svg{
     border: 1px solid var(--color-darkest-gray);
-    width: 45px;        /*min 25px***************/
-    height: auto;
+    width: 20px;        /**/
+    height: 20px;       /**/
+    box-sizing:content-box;
     aspect-ratio: 1;
     border-radius: 100%;
-    padding: 11px;  /*************/
+    padding: 2.5%;
     margin-right: var(--inter-margin-right);
 }
 /*general rating of the item*/
 [class$='all_rating'] > [class$='star_rating'] {
     font-family: Roboto;
     font-weight: 400;
-    font-size: 15px;    /*************/
+    font-size: 15px;    /**/
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -52,31 +52,31 @@
 .product-details > [class$='cost'] {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 10px;          /**/
     align-items: center;
 }
 .product-details > [class$='cost'] > .price {
     font-family: Volkhov;
     font-weight: 400;
-    font-size: 24px;    /*************/
+    font-size: clamp(20px, calc(var(--max-width)*0.045), 24px);
 }
 .product-details > [class$='cost'] > .original-price {
     font-family: Poppins;
     font-weight: 400;
-    font-size: 16px;    /*************/
+    font-size: clamp(12px, calc(var(--max-width)*0.035), 16px);
     text-decoration: line-through;
     color: var(--color-darkest-gray);
 }
 .product-details > [class$='cost'] > .discount {
     font-family: Poppins;
     font-weight: 500;
-    font-size: 11px;    /*************/
+    font-size: 11px;        /**/
     color: var(--color-white);
     
     background-color: var(--color-ligher-red);
     border: 1px solid var(--color-ligher-red);
-    padding-left: 6px;  /*************/
-    padding-right: 6px; /*************/
+    padding-left: 6px;      /**/
+    padding-right: 6px;     /**/
 }
 /*views*/
 .product-details > [class$='currently_views'] {
@@ -87,14 +87,14 @@
 
     font-family: Poppins;
     font-weight: 400;
-    font-size: 16px;    /*************/
+    font-size: clamp(13px, calc(var(--max-width)*0.035), 16px);
     color: var(--color-darkest-gray);
 }
 /*countdown offer*/
 .product-details > [class$='countdown_offer'] {
     font-family: Volkhov;
     font-weight: 400;
-    font-size: 18px;    /*************/
+    font-size: clamp(10px, calc(var(--max-width)*0.035), 18px);
 
     display: flex;
     flex-direction: row;
@@ -104,7 +104,7 @@
     color: var(--color-red);
     background-color: var(--color-lightest-red);
 
-    padding: 10px;
+    padding: clamp(5px, calc(var(--max-width)*0.02), 10px);
     
     border-radius: 4px;
     border: 1px solid var(--color-red);
@@ -113,11 +113,11 @@
 .product-details > [class$='countdown_offer'] > [class$='time_left']{
     font-family: Jost;
     font-weight: 600;
-    font-size: 20px;    /*************/
+    font-size: clamp(12px, calc(var(--max-width)*0.035), 20px);
 
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: calc((var(--max-width) - var(--inter-margin-right))*0.01);
     align-items: center;
 
     color: var(--color-red);
@@ -127,7 +127,7 @@
     color: var(--color-darkest-gray);
     font-family: Jost;
     font-weight: 400;
-    font-size: 16px;    /*************/
+    font-size: clamp(12px, calc(var(--max-width)*0.035), 16px);
 
     display: flex;
     flex-direction: column;
@@ -153,22 +153,22 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 7px;
+    gap: 7px;   /**/
 }
 .product-details > [class$='size'] > h3 {
     font-family: Jost;
     font-weight: 700;
-    font-size: 16px;    /*************/
+    font-size: var(--mini-tittles);
 }
 .product-details > [class$='size'] > .filter-sizes {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 10px;  /*********************/
+    gap: 10px;  /**/
 }
 .filter-sizes > .product-size {
-    width: 45px;    /****************/
+    width: clamp(30px, calc((var(--max-width) - var(--inter-margin-right))*0.1),45px);
     height: auto;
     aspect-ratio: 1;
     border-radius: 5px;
@@ -190,15 +190,19 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 7px;
+    gap: 7px;   /**/
+}
+.product-card-colors {
+    margin-bottom: 0px;
+    padding: 0px;
 }
 .product-details > [class$='color'] > h3 {
     font-family: Jost;
     font-weight: 700;
-    font-size: 16px;    /*************/
+    font-size: var(--mini-tittles);
 }
 .product-card-colors > .product-color {
-    width: 40px;    /*************/
+    width: clamp(25px, calc(calc(var(--max-width)*0.5)*0.14), 40px);
     aspect-ratio: 1;
     height: auto;
 }
@@ -211,14 +215,14 @@
 .product-details > [class$='quantity'] > h3 {
     font-family: Jost;
     font-weight: 400;
-    font-size: 16px;    /*************/
+    font-size: var(--mini-tittles);
     align-self: flex-start;
+    flex-wrap: nowrap;
 }
 .product-details > [class$='quantity'] > .buttons-shopping {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 45px;   /**********/
+    width: var(--max-width);
     justify-content: space-between;
 }
 .quantity_button {
@@ -229,8 +233,9 @@
     align-items: center;
     flex-wrap: nowrap;
     height: auto;
-    width: 128px;   /***********/
-    font-size: 16px;    /******/
+    width: var(--width-quantity_button);
+    aspect-ratio: 6/2;
+    font-size: clamp(12px, calc(var(--max-width)*0.035), 16px);
 }
 .quantity_button > button {
     background-color: transparent;
@@ -242,12 +247,13 @@
 .add_button {
     font-family: Volkhov;
     font-weight: 400;
-    font-size: 16px;    /*************/
+    font-size: clamp(12px, calc(var(--max-width)*0.035), 16px);
 
     background-color: transparent;
     border: 1px solid var(--color-black);
     color: var(--color-black);
     border-radius: 5px;
-
-    width: 442px;
+    
+    box-sizing: border-box;
+    width: calc((var(--max-width) - var(--width-quantity_button))*0.92);
 }
