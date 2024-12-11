@@ -26,8 +26,8 @@ providing a consistent starting point for custom styles.
     --color-lightest-red: #F8CCCC;
     --color-lightest-gray-red:#E5E5E5;
     --color-darkest-gray-red: #525252;
-    --color-lighter-gray: #484848; /*a few letters*/
-    --color-lightest-gray: #666666;
+    --color-lighter-gray-red: #484848; /*a few letters*/
+    --color-lightest-gray-red-v2: #666666;
 
     --color-darker-black: #191919;
     --color-black: #000000;

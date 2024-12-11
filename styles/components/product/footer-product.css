@@ -22,6 +22,11 @@
     font-weight: 400;
     font-size: clamp(10px, calc(var(--max-width)*0.022), 12px);
 }
+.item-interaction > [class^='interaction']:hover,
+.item-interaction > [class^='interaction']:active {
+    color: var(--color-primary);
+    cursor: pointer;
+}
 /*shipping information*/
 .shipping-info {
     display: flex;

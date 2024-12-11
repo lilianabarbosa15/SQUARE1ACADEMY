@@ -134,3 +134,9 @@ svg:hover {
     color: var(--color-primary);
     cursor: pointer;
 }
+
+/* */
+p {
+    border: 1px solid transparent;
+    transition: all 0.3ms;
+}
