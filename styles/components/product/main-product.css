@@ -1,0 +1,36 @@
+@import "./images-section.css";
+@import "./product_details-section.css";
+@import "./footer-product.css";
+
+
+main > .product-features {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    padding: 30px;  /*********************/
+    --padding-left: 40px;        /********/
+    --padding-right: 20px;       /***********/
+
+    --inter-margin-right: 20px;   /***********/
+
+    --max-width: 585px; /*585px;   /************/
+    --max-height-images_space: 671px; /*maximum height with 491px of the big picture*/ /********/
+}
+
+.product-features > .product-images {
+    background-color: blue;
+    width: var(--max-width);
+    aspect-ratio: 3/3.45;
+
+    grid-column: 1/2;
+    justify-self: flex-end;
+    
+}
+.product-features > .product-details {
+    grid-column: 2/3;
+    width: var(--max-width);
+}
+.product-features > .footer-sale-information {
+    grid-column: 2/3;
+    width: var(--max-width);
+}
