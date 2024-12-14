@@ -1,0 +1,23 @@
+@import "./minicart/header.css";
+@import "./minicart/main.css";
+@import "./minicart/footer.css";
+
+body {
+    background-color: var(--color-gray-with-transparency);
+    display: grid;
+    grid-template-columns: repeat(10,1fr);  /*********/
+}
+.shopping-cart {
+    grid-column: 7/11;      /*********/
+    background-color: var(--color-white);
+    padding-left: var(--padding-left-p);
+    padding-right: var(--padding-right-p);
+    padding-top: var(--padding-top-p);
+    padding-bottom: var(--padding-bottom-p);
+    position: relative;
+
+    --padding-left-p: 45px;     /*********/
+    --padding-right-p: 86px;        /*********/
+    --padding-top-p: 32px;              /*********/
+    --padding-bottom-p: 30px;       /*********/
+}

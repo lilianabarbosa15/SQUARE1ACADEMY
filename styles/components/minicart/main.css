@@ -1,0 +1,114 @@
+@import "./../product/product_details-section.css";
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*height: 75%;*/
+
+}
+
+/*Each item*/
+.products-shopping_cart {
+    padding-top: 19px;      /********/
+    padding-bottom: 19px;   /********/
+    margin-top: 48px;       /********/
+    display: grid;
+    grid-template-columns: repeat(2,0.25fr);
+    gap: 20px;              /**********/
+    border-bottom: 1px solid var(--color-black-with-transparency);
+}
+.product-description-shopping_cart {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+/*product's image*/
+.product-img-shopping_cart {
+    grid-column: 1/2;
+    height: auto;
+}
+/*product's name*/
+.products-shopping_cart .product-name-shopping_cart {
+    font-family: Volkhov;
+    font-weight: 400;
+    font-size: 22px;            /*********/
+    color: var(--color-black);
+}
+/*product's color and price*/
+.products-shopping_cart .product-color-shopping_cart,
+.products-shopping_cart .product-price-shopping_cart {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 22px;    /*********/
+    color: var(--color-darkest-gray);
+}
+.products-shopping_cart .product-price-shopping_cart {
+    color: var(--color-black);
+}
+/*product's button*/
+.quantity_button {
+    border: 1px solid var(--color-darkest-gray);
+    width: 100%;
+    background-color: var(--color-lightest-gray-v2);
+    border: 1px solid var(--color-lightest-gray-v2);
+}
+.quantity_button > button {
+    font-size: 30px;    /********/
+}
+.quantity_button > .button-value {
+    color: var(--color-darkest-gray);
+}
+.quantity_button > button:not(.button-value):hover,
+.quantity_button > button:not(.button-value):active {
+    background-color: var(--color-lightest-blue);
+    color: var(--color-primary);
+}
+
+/*checkboxes*/
+aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-black-with-transparency);
+}
+input[type="checkbox"] {
+    appearance: none;
+    border: 3px solid var(--color-black);
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    width: var(--button-size);
+    height: var(--button-size);
+
+    --button-size: 32px;    /********/
+}
+input[type="checkbox"]:checked {
+    background-color: var(--color-darkest-gray);
+    border: 3px solid var(--color-darkest-gray);
+}
+input[type="checkbox"]:checked:after {
+    content: '';
+    position: absolute;
+    left: calc(var(--button-size)/4);
+    top: calc(var(--button-size)/11);
+    width: calc(var(--button-size)/4);
+    height: calc(var(--button-size)/2);
+    border: solid white;
+    border-width: 0 calc(var(--button-size)/10) calc(var(--button-size)/10) 0;
+    transform: rotate(45deg);
+}
+.wrap_label-shopping_cart {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 22px;    /*******/
+    color: var(--color-darkest-gray);
+}
+.wrap_label-shopping_cart > span {
+    color: var(--color-black);
+}
