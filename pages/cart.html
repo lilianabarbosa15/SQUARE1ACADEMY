@@ -54,22 +54,64 @@
             </nav>
         </header>
         <main>
-            <header>    <!--"phrase" that doesn't change-->
-                <h1>Shopping Cart</h1>
-                <div>
-                    <p class="origin">Home</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="currentColor">
-                        <path d="M2.89799 1.14098L2.77369 1.26526C2.69132 1.34763 2.69132 1.48119 2.77369 1.56358L6.21009 5L2.77369 8.43642C2.69132 8.51879 2.69132 8.65235 2.77369 8.73473L2.89799 8.85901C2.98036 8.94138 3.11392 8.94138 3.19629 8.85901L6.90617 5.14915C6.98854 5.06678 6.98854 4.93322 6.90617 4.85083L3.19629 1.14098C3.11392 1.0586 2.98036 1.0586 2.89799 1.14098Z" fill="currentColor" stroke="black" stroke-width="0.0175781"/>
-                    </svg>
-                    <p class="branch"> Your Shopping Cart</p>
+            <header>    <!--subheader that doesn't change-->
+                <div class="page-name">
+                    <h1>Shopping Cart</h1>
+                    <div>
+                        <p class="origin">Home</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="currentColor">
+                            <path d="M2.89799 1.14098L2.77369 1.26526C2.69132 1.34763 2.69132 1.48119 2.77369 1.56358L6.21009 5L2.77369 8.43642C2.69132 8.51879 2.69132 8.65235 2.77369 8.73473L2.89799 8.85901C2.98036 8.94138 3.11392 8.94138 3.19629 8.85901L6.90617 5.14915C6.98854 5.06678 6.98854 4.93322 6.90617 4.85083L3.19629 1.14098C3.11392 1.0586 2.98036 1.0586 2.89799 1.14098Z" fill="currentColor" stroke="black" stroke-width="0.0175781"/>
+                        </svg>
+                        <p class="branch"> Your Shopping Cart</p>
+                    </div>
+                </div>
+                <div class="tittles-items">
+                    <h2>Product</h2>
+                    <h2>Price</h2>
+                    <h2>Quantity</h2>
+                    <h2>Total</h2>
                 </div>
             </header>
-            <section class="all-the-items">
+            <section class="all-the-items"> <!--items that are going to be bought-->
                 <article class="products-shopping_cart">
                     <div class="product-description-shopping_cart">
                         <img class="product-img-shopping_cart" src="./../assets/images/products/oversized_t-shirt.png" alt="A young woman with long blonde hair wearing a red jacket, partially covering her body. Her skin is bare and the jacket is open at the front.">
                         <div class="product-details-shopping_cart">
-                            <h2 class="product-name-shopping_cart"> Mini Dress With Ruffled Straps </h2>
+                            <h3 class="product-name-shopping_cart"> Mini Dress With Ruffled Straps </h3>
+                            <p class="product-color-shopping_cart"> Color: Red </p>
+                            <p class="product-remove-shopping_cart"> Remove </p>
+                        </div>
+                    </div>
+                    <p class="product-price-shopping_cart"> $14.90</p>
+                    <div class="product-button-shopping_cart quantity_button">
+                        <button class="button-less"> - </button>
+                        <button class="button-value"> 01 </button>
+                        <button class="button-more"> + </button>
+                    </div>
+                    <p class="product-total-shopping_cart"> $14.90</p>
+                </article>
+                <article class="products-shopping_cart">
+                    <div class="product-description-shopping_cart">
+                        <img class="product-img-shopping_cart" src="./../assets/images/products/oversized_t-shirt.png" alt="A young woman with long blonde hair wearing a red jacket, partially covering her body. Her skin is bare and the jacket is open at the front.">
+                        <div class="product-details-shopping_cart">
+                            <h3 class="product-name-shopping_cart"> Mini Dress With Ruffled Straps </h3>
+                            <p class="product-color-shopping_cart"> Color: Red </p>
+                            <p class="product-remove-shopping_cart"> Remove </p>
+                        </div>
+                    </div>
+                    <p class="product-price-shopping_cart"> $14.90</p>
+                    <div class="product-button-shopping_cart quantity_button">
+                        <button class="button-less"> - </button>
+                        <button class="button-value"> 01 </button>
+                        <button class="button-more"> + </button>
+                    </div>
+                    <p class="product-total-shopping_cart"> $14.90</p>
+                </article>
+                <article class="products-shopping_cart">
+                    <div class="product-description-shopping_cart">
+                        <img class="product-img-shopping_cart" src="./../assets/images/products/oversized_t-shirt.png" alt="A young woman with long blonde hair wearing a red jacket, partially covering her body. Her skin is bare and the jacket is open at the front.">
+                        <div class="product-details-shopping_cart">
+                            <h3 class="product-name-shopping_cart"> Mini Dress With Ruffled Straps </h3>
                             <p class="product-color-shopping_cart"> Color: Red </p>
                             <p class="product-remove-shopping_cart"> Remove </p>
                         </div>

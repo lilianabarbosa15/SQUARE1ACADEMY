@@ -1,22 +1,57 @@
 @import "./../minicart/header.css";
 
+
 main > header {
     justify-content: center;
-    align-items: center;
+    align-items: normal;
+    gap: var(--header-gap_cart);
+    padding-bottom: var(--header-padding_bottom_cart);
+    border-bottom: 1px solid var(--color-black-with-transparency);
     --header-tittle-size: var(--header-tittle-size_cart);
     --header-info-size: var(--header-info-size_cart);
+    --header-tittles-item: calc(var(--header-info-size_cart) + 6px);
 }
-main > header > div {
+
+/*page's tittle*/
+.page-name > div {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    justify-content: center;
+    gap: 10px;  /**/
 }
-div > p {
+div p {
     color: var(--color-black);
 }
-div > .origin {
+div .origin {
     font-size: calc(var(--header-info-size) - 1px);
 }
-div > .branch {
+div .branch {
     font-size: var(--header-info-size);
+}
+
+/*tittle of each feature of the item (product, price, quantity, total)*/
+.tittles-items {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.tittles-items :nth-child(1) {
+    grid-column: 1/2;
+    justify-self: start;
+}
+.tittles-items :nth-child(2) {
+    grid-column: 3/4;
+    justify-self: center;
+}
+.tittles-items :nth-child(3) {
+    grid-column: 5/6;
+    justify-self: start;
+}
+.tittles-items :nth-child(4) {
+    grid-column: 7/8;
+    justify-self: end;
+}
+.tittles-items h2 {
+    font-family: Volkhov;
+    font-weight: 400;
+    font-size: var(--header-tittles-item);
 }

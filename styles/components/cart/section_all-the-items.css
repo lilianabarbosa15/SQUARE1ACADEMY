@@ -6,43 +6,70 @@
     overflow-y:unset;
     flex-wrap: nowrap;
     --margin-top-main: var(--margin-top_cart);
-    --size-info-product: var(--size-info-product_cart);
     --space-between-button: var(--space-between-button_cart);
-    --font-description-item: var(--font-description-item_cart);
+    --font-item: var(--font-item_cart);
     --font-button-item: var(--font-button-item_cart);
 }
+
 .products-shopping_cart {
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-around;*/
-    grid-template-columns: repeat(7, var(--size-info-product));/* 175px);/*var(--size-info-product));*/
-    gap: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, calc(100% / 7));
+    gap: 0px;
 }
+
+/*it belongs to "product"*/
 .product-description-shopping_cart {
     grid-column: 1/3;
+    width: 100%;
+    flex-wrap: nowrap;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--space_between-product);
 }
-.product-description-shopping_cart .product-img-shopping_cart {
+.product-img-shopping_cart {
     grid-column: 1/2;
 }
-.product-description-shopping_cart .product-details-shopping_cart {
-    /*grid-column: 2/3;
-    display: flex;
-    flex-direction: column;*/
-    align-self: flex-start;
+.product-details-shopping_cart {
+    grid-column: 2/3;
+}
+.product-description-shopping_cart .product-details-shopping_cart h3 {
+    font-size: var(--font-item);
+    text-align: start;
+}
+.product-description-shopping_cart .product-details-shopping_cart p {
+    font-size: var(--font-item);
+    justify-self: start;
+}
+.product-remove-shopping_cart {
+    text-decoration: underline;
+    color: var(--color-darkest-gray);
 }
 
+/*it belongs to "price"*/
 .product-price-shopping_cart {
     grid-column: 3/4;
+    font-size: var(--font-item);
+    font-family: Volkhov;
+    font-weight: 400;
 }
 
+/*it belongs to "quantity"*/
 .product-button-shopping_cart {
-    grid-column: 5;
+    grid-column: 5/6;
     max-width: 120px;
-        
+    width:100%;
+}
+.product-button-shopping_cart {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkest-gray);
 }
 
+/*it belongs to "total"*/
 .product-total-shopping_cart {
     grid-column: 7/8;
+    font-size: var(--font-item);
+    text-align: end;
+    font-family: Volkhov;
+    font-weight: 400;
 }

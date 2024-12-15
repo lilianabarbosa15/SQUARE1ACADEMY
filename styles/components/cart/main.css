@@ -7,23 +7,25 @@ main {
     --padding-top-p: 40px;
     /*******************************************/
     /*header variables*/
-    --header-tittle-size_cart: clamp(24px,3.3vw,42px);
-    --header-info-size_cart: clamp(14px,1.3vw,16px);
+    --header-tittle-size_cart: clamp(12px,1.7vw,21px);
+    --header-info-size_cart: clamp(10px,1.3vw,16px);
+    --header-padding_bottom_cart: clamp(10px, 1.6vw, 30px);    /***********/
+    --header-gap_cart: clamp(20px, 3vw, 50px); /***********/
     /*main variables*/
-    --margin-top_cart: 20px; /*clamp(20px,2.6vw,48px);*/    /**************/
-    --size-info-product_cart: 0.5fr;                                /************/
-    --space-between-button_cart: 0px; /*clamp(10px,3vw,25px);           /**************/
-    --font-description-item_cart: clamp(14px,1.2vw,22px);        /**************/
-    --font-button-item_cart: clamp(18px,1.6vw,30px);             /**************/
+    --margin-top_cart: clamp(10px,2.6vw,48px);  /********/
+    --space-between-button_cart: clamp(10px,1.4vw,25px);
+    --font-item_cart: clamp(12px,1.5vw,22px);   /**********/
+    --font-button-item_cart: clamp(18px,1.6vw,30px);
+    --space_between-product: clamp(5px, 1vw,10px); /**********/
     /*footer variables*/
-    --font-size-footer_cart: clamp(14px,1.2vw,22px);
+    --font-size-footer_cart: clamp(13px,1.7vw,22px);
     --gap-footer_cart: clamp(5px,1.1vw,20px);
     --checkbox-size_cart: clamp(24px,1.8vw,32px);
     /*******************************************/
 
     display: grid;
     grid-template-columns: repeat(2,1fr);  /**/
-    gap: 30px;
+    gap: 0px;
     padding: var(--padding-p);
     padding-top: var(--padding-top-p);
 }
