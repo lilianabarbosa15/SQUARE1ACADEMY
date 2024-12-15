@@ -1,0 +1,7 @@
+@import "./../minicart/footer.css";
+
+footer {
+    --font-size-footer: var(--font-size-footer_cart);
+    --gap-footer: var(--gap-footer_cart);
+    --checkbox-size: var(--checkbox-size_cart);
+}

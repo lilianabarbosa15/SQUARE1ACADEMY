@@ -1,0 +1,22 @@
+@import "./../minicart/header.css";
+
+main > header {
+    justify-content: center;
+    align-items: center;
+    --header-tittle-size: var(--header-tittle-size_cart);
+    --header-info-size: var(--header-info-size_cart);
+}
+main > header > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+div > p {
+    color: var(--color-black);
+}
+div > .origin {
+    font-size: calc(var(--header-info-size) - 1px);
+}
+div > .branch {
+    font-size: var(--header-info-size);
+}
