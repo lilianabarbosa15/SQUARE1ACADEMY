@@ -21,7 +21,7 @@ header > h1 {
     color: var(--color-primary);
     cursor: pointer;
 }
-header > p {
+header p {
     font-family: Poppins;
     font-weight: 400;
     font-size: var(--header-info-size);

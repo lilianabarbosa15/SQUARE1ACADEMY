@@ -1,6 +1,6 @@
 @import "./../product/product_details-section.css";
 
-main {
+.all-the-items {
     margin-top: var(--margin-top-main);
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@ main {
     overflow-y: auto;
     flex-wrap: nowrap;
 }
-main::-webkit-scrollbar {
+.all-the-items::-webkit-scrollbar {
     width: 1px; 
 }
 
@@ -35,21 +35,21 @@ main::-webkit-scrollbar {
     height: auto;
 }
 /*product's name*/
-.products-shopping_cart .product-name-shopping_cart {
+.product-name-shopping_cart {
     font-family: Volkhov;
     font-weight: 400;
     font-size: var(--font-description-item);
     color: var(--color-black);
 }
 /*product's color and price*/
-.products-shopping_cart .product-color-shopping_cart,
-.products-shopping_cart .product-price-shopping_cart {
+.product-color-shopping_cart,
+.product-price-shopping_cart {
     font-family: Poppins;
     font-weight: 400;
     font-size: var(--font-description-item);
     color: var(--color-darkest-gray);
 }
-.products-shopping_cart .product-price-shopping_cart {
+.product-price-shopping_cart {
     color: var(--color-black);
 }
 /*product's button*/
