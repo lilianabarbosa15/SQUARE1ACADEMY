@@ -7,20 +7,24 @@ header {
 header > h1 {
     font-family: Volkhov;
     font-weight: 400;
-    font-size: 42px; /************/
+    font-size: var(--header-tittle-size);
     color: var(--color-black);
 }
-header > svg {
+.cancel_symbol {
     position: absolute;
     top: 33px;
     right: 33px;
     width: 24px;
     height: 24px;
 }
+.cancel_symbol:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+}
 header > p {
     font-family: Poppins;
     font-weight: 400;
-    font-size: 26px;    /*******/
+    font-size: var(--header-info-size);
     color: var(--color-darkest-gray);
 }
 header > p > strong {
