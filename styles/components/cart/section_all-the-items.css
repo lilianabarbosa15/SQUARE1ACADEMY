@@ -32,18 +32,25 @@
 }
 .product-details-shopping_cart {
     grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--gap-item-description);
 }
 .product-description-shopping_cart .product-details-shopping_cart h3 {
     font-size: var(--font-item);
     text-align: start;
 }
-.product-description-shopping_cart .product-details-shopping_cart p {
+.product-description-shopping_cart .product-details-shopping_cart p,
+.product-description-shopping_cart .product-details-shopping_cart a {
     font-size: var(--font-item);
-    justify-self: start;
 }
 .product-remove-shopping_cart {
     text-decoration: underline;
     color: var(--color-darkest-gray);
+}
+.product-remove-shopping_cart:hover {
+    cursor: pointer;
 }
 
 /*it belongs to "price"*/

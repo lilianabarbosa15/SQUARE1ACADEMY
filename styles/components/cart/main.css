@@ -13,8 +13,9 @@ main {
     --header-gap_cart: clamp(20px, 3vw, 50px);
     /*main variables*/
     --margin-top_cart: clamp(10px,2.6vw,48px);
+    --gap-item-description: clamp(5px,1.1vw,20px);
     --space-between-button_cart: clamp(10px,1.4vw,25px);
-    --font-item_cart: clamp(12px,1.5vw,22px);
+    --font-item_cart: clamp(11px,1.5vw,22px);
     --font-button-item_cart: clamp(18px,1.6vw,30px);
     --space_between-product: clamp(5px, 1vw,10px);
     /*footer variables*/
@@ -47,6 +48,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, calc(100% / 4));
         gap: 0px;
+        --gap-item-description: 2px;
     }
     /*"product"*/
     .product-description-shopping_cart {
