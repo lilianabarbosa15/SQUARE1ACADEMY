@@ -21,9 +21,10 @@ input:not(input[type="checkbox"]) {
     position: relative;
 }
 
-.input-container svg:hover {
+.input-container path:hover {
     cursor: pointer;
     color: var(--color-primary);
+    fill: var(--color-primary);
 }
 
 /*for each input fields*/
@@ -94,7 +95,7 @@ aside { /*saveInfo*/
 }
 
 /*delivery*/
-.input-container > svg {
+.entryField >.input-container > svg {
     width: 12px;
     height: 8px;
     position: absolute;
@@ -138,6 +139,14 @@ aside { /*saveInfo*/
 #brand {
     padding-right: calc(var(--padding-left_right)*2 + 65px); /*28px + 65px (div: img+gap+svg) + 28px(position-div)*/
 }
+#number {
+    padding-right: calc(var(--padding-left_right)*2 + 12px); /*28px + 12px (svg-width) + 28px(position-svg)*/
+}
+.entryField > .input-container > svg {
+    width: 16px;
+    height: 21px;
+}
+
 .payment-information .entryField {
     background-color: var(--color-white-smoke);
     padding: 20px;

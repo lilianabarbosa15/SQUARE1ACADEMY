@@ -30,6 +30,9 @@
 [class*="icon-button"]:hover {
     color: var(--color-primary);
 }
+.shopping-icon-button {
+    position: relative;
+}
 .shopping-icon-button > .product-quantity {
     width: 12.78px;
     height: 12.78px;

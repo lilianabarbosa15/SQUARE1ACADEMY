@@ -164,7 +164,7 @@
                     <h2>Delivery</h2>
                     <div class="entryField">
                         <div class="input-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="8px" viewBox="0 0 12 8" fill="currentColor" class="svg_input-container">
                                 <path d="M5.53366 7.78781L0.193175 1.92106C-0.0643917 1.63811 -0.0643917 1.17938 0.193175 0.896463L0.816057 0.212204C1.07318 -0.0702607 1.48991 -0.0708043 1.74765 0.210996L6.00001 4.8605L10.2524 0.210996C10.5101 -0.0708043 10.9268 -0.0702607 11.1839 0.212204L11.8068 0.896463C12.0644 1.17941 12.0644 1.63814 11.8068 1.92106L6.46637 7.78781C6.2088 8.07073 5.79122 8.07073 5.53366 7.78781Z" fill="currentColor"/>
                             </svg>
                             <input type="entryField" id="country" name="country" placeholder="Country / Region">
@@ -187,7 +187,7 @@
                         <div class="input-container">
                             <div>
                                 <img src="./../assets/images/others/payments.png" width="320px" height="25.23px" alt="The image shows various payment logos including Visa, Mastercard, Amex, JCB, Discover, Diners Club, and UnionPay.">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="currentColor">
+                                <svg class="svg_input-container" xmlns="http://www.w3.org/2000/svg" width="12px" height="8px" viewBox="0 0 12 8" fill="currentColor">
                                     <path d="M5.53366 7.78781L0.193175 1.92106C-0.0643917 1.63811 -0.0643917 1.17938 0.193175 0.896463L0.816057 0.212204C1.07318 -0.0702607 1.48991 -0.0708043 1.74765 0.210996L6.00001 4.8605L10.2524 0.210996C10.5101 -0.0708043 10.9268 -0.0702607 11.1839 0.212204L11.8068 0.896463C12.0644 1.17941 12.0644 1.63814 11.8068 1.92106L6.46637 7.78781C6.2088 8.07073 5.79122 8.07073 5.53366 7.78781Z" fill="currentColor"/>
                                 </svg>
                             </div>
@@ -195,7 +195,12 @@
                         </div>
                         <div class="details-credit_card">
                             <div class="entryField">
-                                <input type="entryField" id="number" name="number" placeholder="Card Number">
+                                <div class="input-container">
+                                    <svg class="svg_input-container" xmlns="http://www.w3.org/2000/svg" width="16px" height="21px" viewBox="0 0 16 21" fill="currentColor">
+                                        <path d="M14 7H13V5C13 2.24 10.76 0 8 0C5.24 0 3 2.24 3 5V7H2C0.9 7 0 7.9 0 9V19C0 20.1 0.9 21 2 21H14C15.1 21 16 20.1 16 19V9C16 7.9 15.1 7 14 7ZM8 16C6.9 16 6 15.1 6 14C6 12.9 6.9 12 8 12C9.1 12 10 12.9 10 14C10 15.1 9.1 16 8 16ZM5 7V5C5 3.34 6.34 2 8 2C9.66 2 11 3.34 11 5V7H5Z" fill="currentColor"/>
+                                    </svg>
+                                    <input type="entryField" id="number" name="number" placeholder="Card Number">
+                                </div>
                                 <input type="entryField" id="expiration_number" name="expiration_number" placeholder="Expiration Date">
                                 <input type="entryField" id="cvv" name="cvv" placeholder="Security Code">
                                 <input type="entryField" id="name-card" name="name-card" placeholder="Card Holder Name">
