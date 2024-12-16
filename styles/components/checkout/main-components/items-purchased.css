@@ -17,6 +17,9 @@ p {
     overflow-y: auto;
     flex-wrap: nowrap;
 }
+.all-the-items::-webkit-scrollbar {
+    width: 1px; 
+}
 
 /*products*/
 .products-shopping_cart {
