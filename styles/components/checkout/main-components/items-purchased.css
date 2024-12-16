@@ -1,5 +1,7 @@
 .items-purchased {
     background-color: var(--color-white-smoke);
+    display: flex;
+    flex-direction: column;
 }
 
 /*general styles*/
@@ -12,8 +14,8 @@ p {
 .all-the-items {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    height: 100vh;
+    /*flex-grow: 1;*/
+    max-height: 80vh;
     overflow-y: auto;
     flex-wrap: nowrap;
 }
@@ -97,4 +99,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.total-charges :nth-child(2) {
+    color: var(--color-primary);
 }
