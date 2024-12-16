@@ -2,14 +2,14 @@
 @import "./main-components/items-purchased.css";
 
 main {
-    --header-title-size: 42px; /**********/
-    --checkbox-size: clamp(24px,2.5vw,32px); /******/
-    background-color: blueviolet;
+    --header-title-size: 42px;
+    --checkbox-size: clamp(24px,2.5vw,32px);
+    background-color: var(--color-white);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;  /******************/
-    padding: 20px;  /***********/
-    padding-top: 50px;  /***************/
+    gap: 40px;
+    padding: 20px;
+    padding-top: 50px;
 }
 
 /*page's title*/
@@ -19,12 +19,31 @@ h1 {
     text-align: center;
 }
 
+/*data required for the purchase*/
 .order-information {
     grid-column: 1/2;
     grid-row: 2;
+
+    --font-size-all: 16px;
+    --padding-left_right: clamp(5px, 2.2vw, 28px);
+    --font-size-h2: clamp(30px, 3.8vw,46px);
+    --padding-top_box-info: clamp(30px, 4vw,50px);  /*Contact, Delivery, Payment*/
 }
 
+/*items for purchase*/
 .items-purchased {
     grid-column: 2/3;
     grid-row: 2;
+
+    max-height: 974px;
+    padding: clamp(10px, 2.4vw,30px);
+    padding-top: clamp(20px, 4vw,50px);
+    --gap-inside-product: clamp(10px, 1.2vw,20px);
+}
+
+@media screen and (max-width:768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
 }

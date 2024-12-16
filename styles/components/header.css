@@ -30,6 +30,16 @@
 [class*="icon-button"]:hover {
     color: var(--color-primary);
 }
+.shopping-icon-button > .product-quantity {
+    width: 12.78px;
+    height: 12.78px;
+    right: 10%;
+    top: 60%;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 10px;
+}
 .logo-box {
     display: flex;
     justify-content: flex-start;
