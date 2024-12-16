@@ -16,7 +16,6 @@ body {
     --padding-bottom-p: 25px;
     /****************************************/
     /*header variables*/
-    --header-tittle-size: clamp(24px,2.5vw,42px);
     --header-info-size: clamp(14px,1.5vw,26px);
     /*main variables*/
     --margin-top-main: 20px; /*clamp(20px,2.6vw,48px);*/
@@ -27,7 +26,6 @@ body {
     /*footer variables*/
     --font-size-footer: clamp(14px,1.2vw,22px);
     --gap-footer: clamp(5px,1.1vw,20px);
-    --checkbox-size: clamp(24px,1.8vw,32px);
     /****************************************/
 
     grid-column: 7/11;

@@ -18,9 +18,7 @@ nav {
     --diameter-colors: clamp(24px, 2.5vw, 30px);    /*min 24px      max.(1280)=30px;*/
     --space-between-colors: 5px;                    /*doesn't change*/
 }
-.nav-shop > .nav-shop-title { /*Filter*/
-    font-family: Volkhov;
-    text-align: left;
+.nav-shop > h1 { /*Filter*/
     font-size: var(--font-size-tittles);
 }
 .filter-tittle > h2 { /*Subtittles (Size, Colors, Prices,Brands, Collections, Tags)*/

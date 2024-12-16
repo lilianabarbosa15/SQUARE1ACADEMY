@@ -20,32 +20,6 @@ aside {
     padding-bottom: calc(var(--gap-footer)/2);
     border-bottom: 1px solid var(--color-black-with-transparency);
 }
-input[type="checkbox"] {
-    appearance: none;
-    border: 3px solid var(--color-black);
-    background-color: transparent;
-    cursor: pointer;
-    position: relative;
-    width: var(--button-size);
-    height: var(--button-size);
-
-    --button-size: var(--checkbox-size);
-}
-input[type="checkbox"]:checked {
-    background-color: var(--color-darkest-gray);
-    border: 3px solid var(--color-darkest-gray);
-}
-input[type="checkbox"]:checked:after {
-    content: '';
-    position: absolute;
-    left: calc(var(--button-size)/4);
-    top: calc(var(--button-size)/11);
-    width: calc(var(--button-size)/4);
-    height: calc(var(--button-size)/2);
-    border: solid white;
-    border-width: 0 calc(var(--button-size)/10) calc(var(--button-size)/10) 0;
-    transform: rotate(45deg);
-}
 .wrap_label-shopping_cart {
     font-family: Poppins;
     font-weight: 400;

@@ -10,8 +10,6 @@
     box-sizing: border-box;
 }
 .product-details > [class$='all_rating'] > h1 {
-    font-family: Volkhov;
-    font-weight: 400;
     font-size: clamp(12px, calc(var(--max-width)*0.03), 14px);
     color: var(--color-lighter-gray);
     text-transform: uppercase;

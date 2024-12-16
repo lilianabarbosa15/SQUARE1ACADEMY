@@ -7,7 +7,6 @@ main {
     --padding-top-p: 40px;
     /*******************************************/
     /*header variables*/
-    --header-tittle-size_cart: clamp(12px,1.7vw,21px);
     --header-info-size_cart: clamp(10px,1.3vw,16px);
     --header-padding_bottom_cart: clamp(10px, 1.6vw, 30px);
     --header-gap_cart: clamp(20px, 3vw, 50px);
@@ -42,6 +41,11 @@ footer {
 
 
 @media screen and (max-width: 570px) {
+    /*for the main*/
+    main {
+        --padding-top-p: 20px;
+    }
+
     /*for each item*/
     .products-shopping_cart {
         width: 100%;

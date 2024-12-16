@@ -7,12 +7,14 @@ main > header {
     gap: var(--header-gap_cart);
     padding-bottom: var(--header-padding_bottom_cart);
     border-bottom: 1px solid var(--color-black-with-transparency);
-    --header-tittle-size: var(--header-tittle-size_cart);
     --header-info-size: var(--header-info-size_cart);
     --header-tittles-item: calc(var(--header-info-size_cart) + 6px);
 }
 
 /*page's tittle*/
+h1 {
+    text-align: center;
+}
 .page-name > div {
     display: flex;
     flex-direction: row;

@@ -35,6 +35,7 @@ providing a consistent starting point for custom styles.
     --color-black: #000000;
 
     --color-darkest-black-blue: #323334;
+    --color-white-smoke: #F5F5F5;
     --color-white: #FFFFFF;
     --color-lighter-gray-new_page: #F3F3F3;
     --color-lightest-blue: #DEDFE1;
@@ -47,12 +48,57 @@ providing a consistent starting point for custom styles.
 
     --color-darker-orange: #A86A3D;
     --color-lighter-violet: #DBD0CCCC;
+
+    --color-blue: #1456FF;
+
+    /*checkboxes*/
+    --checkbox-size: clamp(24px,1.8vw,32px);
+
+    /*header*/
+    --header-title-size: clamp(24px,2.5vw,42px);
 }
 
 body {
     min-height: 100dvh;
 }
-input,
+
+input {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkest-gray);
+    font-family: Poppins;
+    font-weight: 400;
+    color: var(--color-darkest-gray);
+    box-sizing: border-box;
+}
+input:not(input[type="checkbox"]) {
+    padding: 28px;
+}
+input[type="checkbox"] {
+    appearance: none;
+    border: 3px solid var(--color-black);
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+    transition: all 300ms;
+}
+input[type="checkbox"]:checked {
+    background-color: var(--color-darkest-gray);
+    border: 3px solid var(--color-darkest-gray);
+}
+input[type="checkbox"]:checked:after {
+    content: '';
+    position: absolute;
+    left: calc(var(--checkbox-size)/4);
+    top: calc(var(--checkbox-size)/11);
+    width: calc(var(--checkbox-size)/4);
+    height: calc(var(--checkbox-size)/2);
+    border: solid var(--color-white);
+    border-width: 0 calc(var(--checkbox-size)/10) calc(var(--checkbox-size)/10) 0;
+    transform: rotate(45deg);
+}
+
 button,
 textarea,
 select {
@@ -95,7 +141,13 @@ button:hover {
     cursor:pointer;
 }
 
-h1,
+h1 {
+    font-family: Volkhov;
+    font-weight: 400;
+    font-size: var(--header-title-size);
+    color: var(--color-black);
+}
+
 h2,
 h3,
 h4,

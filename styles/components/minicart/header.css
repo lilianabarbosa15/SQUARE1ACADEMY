@@ -3,12 +3,6 @@ header {
     flex-direction: column;
     align-items: flex-start;
 }
-.page-name {
-    font-family: Volkhov;
-    font-weight: 400;
-    font-size: var(--header-tittle-size);
-    color: var(--color-black);
-}
 .cancel_symbol {
     position: absolute;
     top: 33px;

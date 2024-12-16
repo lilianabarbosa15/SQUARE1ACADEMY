@@ -1,0 +1,10 @@
+/*
+This stylesheet is the primary archive that provides the necessary styling for the checkout page,
+where the client can find the items to buy and fill in their contact information, as well as the
+necessary details to complete the purchase.
+*/
+@import "./reset.css";
+@import "./fonts/fonts.css";
+@import "./components/checkout.css";
+
+
